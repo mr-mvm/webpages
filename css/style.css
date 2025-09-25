@@ -137,12 +137,17 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
 .hero {
     height: 90vh;
     min-height: 700px;
-    background: linear-gradient(rgba(4, 30, 66, 0.8), rgba(4, 30, 66, 0.9)), url('images/hero-bg.jpg') center/cover no-repeat;
+    background: 
+        linear-gradient(rgba(4, 30, 66, 0.8), rgba(4, 30, 66, 0.9)),
+        url('images/hero-bg.jpg') center/cover no-repeat;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    /* 🔍 DEBUG: Add a bright fallback if image fails */
+    background-color: #00a8a8; /* Teal fallback */
 }
 
 .hero h1,
